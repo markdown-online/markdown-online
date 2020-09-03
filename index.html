@@ -1,0 +1,66 @@
+<!--
+	devloped by gautam
+	date 2020/09/10
+	open-sounce 
+	feel free to contribute
+
+-->
+
+<script src="https://kit.fontawesome.com/3b4d6e018d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<script src="https://kit.fontawesome.com/3b4d6e018d.js" crossorigin="anonymous"></script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<br>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	function inputKey() {
+		document.getElementById("design").value =  document.getElementById("testfield").value;
+	}
+	function doSelect(action){
+		//in process
+	}
+</script>
+
+<div style="width: 100%;height: 60px;padding: 0;border-radius: 10px">
+	
+	<ul  class="list-group"  style="flex-direction: row;padding-top: 5px;padding-left: 5px">
+	<button type="button" onclick="doSelect('**')" class="btn btn-outline-dark" style="margin-left: 10px"><B>B</B></button>
+	<button type="button" onclick="doSelect('*')" class="btn btn-outline-dark" style="margin-left: 10px"><B><i>i</i></B></button>
+	<button type="button" onclick="doSelect('~~')" class="btn btn-outline-dark" style="margin-left: 10px"><B><u>U</u></B></button>
+	<button type="button" onclick="doSelect('>')" class="btn btn-outline-dark" style="margin-left: 10px"><B>"</B></button>
+	<button type="button" onclick="doSelect('#')" class="btn btn-outline-dark" style="margin-left: 10px"><B>H1</B></button>
+	<button type="button" onclick="doSelect('##')" class="btn btn-outline-dark" style="margin-left: 10px"><B>H2</B></button>
+	<button type="button" onclick="doSelect('###')" class="btn btn-outline-dark" style="margin-left: 10px"><B>H3</B></button>
+	<button type="button" onclick="doSelect('####')" class="btn btn-outline-dark" style="margin-left: 10px"><B>H4</B></button>
+	</ul>
+
+</div>
+
+ <div class="row">
+ 	  <div class="col">
+		  <div class="form-group  col-sm" style="margin-left: 6px;">
+		    <label for="exampleFormControlTextarea1" class="editor-header">Format</label>
+		   	<div style="overflow: hidden; position: relative;">
+		   		 <textarea  class="form-control" autocorrect="off" onmouseup="inputKey()"
+		onkeyup="inputKey()" autocapitalize="off" spellcheck="false" style=" text-decoration:none;left: 115px; top: 812px; " id="testfield" rows="10"  wrap="off"> </textarea>
+		   	</div>
+		  </div>  
+	  </div>
+    
+    <div class="col">
+	    <div class="form-group  col-sm" style="margin-left: 6px;">
+	    	<label for="exampleFormControlTextarea1">View</label>
+	    	<div style="overflow: hidden; position: relative;">
+		   		 <textarea class="form-control" autocorrect="off" autocapitalize="off" spellcheck="false" style=" left: 115px; top: 812px; "  id="design" rows="10"  wrap="off"> </textarea>
+		   	</div>
+	  </div>
+ 	</div>
+
+ </div>
+
+</div>
